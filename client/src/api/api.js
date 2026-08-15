@@ -265,12 +265,12 @@ api.defaults.adapter = async (config) => {
     };
 
     const getUser = () => {
-        try {
-            const saved = localStorage.getItem("mock_user");
-            return saved ? JSON.parse(saved) : dummyUser;
-        } catch {
-            return dummyUser;
-        }
+    try {
+        const saved = localStorage.getItem("mock_user");
+        return saved ? JSON.parse(saved) : null;
+    } catch {
+        return null;
+    }
     };
 
     const saveUser = (user) => {
