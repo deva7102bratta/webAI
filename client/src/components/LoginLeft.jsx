@@ -6,7 +6,7 @@ const LoginLeft = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bgImg})` }}
-      className="flex w-2/5 bg-cover bg-center bg-no-repeat flex-col justify-between p-12 shrink-0 select-none"
+      className="hidden lg:flex lg:w-2/5 bg-cover bg-center bg-no-repeat flex-col justify-between p-12 shrink-0 select-none"
     >
       <div>
         <img src={logo} alt="Logo" className="size-9.5" />
