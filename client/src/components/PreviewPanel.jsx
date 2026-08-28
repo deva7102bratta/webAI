@@ -123,10 +123,7 @@ const PreviewPanel = ({
   showCode,
 }) => {
 
-  const [
-    showErrorOverlay,
-    setShowErrorOverlay,
-  ] = useState(true);
+  const [showErrorOverlay, setShowErrorOverlay] = useState(true);
 
 
   const [
