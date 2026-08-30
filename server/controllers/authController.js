@@ -4,8 +4,8 @@ import jwt from "jsonwebtoken"
 const JWT_SECRET = process.env.JWT_SECRET || "fallback_secret"
 
 // Helper to set cookies
-const setSessionCookie = (req, payload){
-  const token = jwt.sign(payload, JWT_SECRET, {expirationIn: "30"})
+const setSessionCookie = (res, payload)=>{
+  const token = jwt.sign(payload, JWT_SECRET, { expiresIn: "30d" })
   res.cookie('token', token, {
     httpOnly: true, 
     secure: process.env.NODE_ENV === "production",
@@ -14,7 +14,7 @@ const setSessionCookie = (req, payload){
     path: "/",
   })
 }
-  
+
 export async function register(req, res){
   const {name, email, password} = req.body
 
