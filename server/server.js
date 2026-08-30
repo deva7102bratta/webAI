@@ -7,7 +7,7 @@ import authRouter from "./routes/authRouter.js"
 
 const app = express()
 
-connectDB()
+await connectDB()
 
 app.use(cors({origin: process.env.ORIGINS.split(","), credentials: true}))
 app.use(cookieParser())
