@@ -1,0 +1,79 @@
+Dependencies
+
+node_modules/
+
+Environment variables
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+Logs
+
+logs/
+.log
+npm-debug.log
+yarn-debug.log*
+pnpm-debug.log*
+
+Build output
+
+dist/
+build/
+.vite/
+
+Coverage
+
+coverage/
+
+Cache
+
+.cache/
+.parcel-cache/
+.eslintcache
+
+OS files
+
+.DS_Store
+Thumbs.db
+
+IDE / Editor
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+Temporary files
+
+tmp/
+temp/
+
+React
+
+*.local
+
+Server uploads
+
+uploads/
+
+Certificates / private keys
+
+*.pem
+*.key
+
+Optional: local database files
+
+*.sqlite
+*.sqlite3
+
+Vite
+
+vite.config..timestamp-
+
+Misc
+
+*.swp
+*.swo
